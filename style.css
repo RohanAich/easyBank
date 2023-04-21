@@ -1,0 +1,186 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #000000bb;
+    margin: 0%;
+
+}
+body{
+    background-color:#f8f7f7;
+    height: 100vh;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.233);
+}
+.balance p3{
+    font-size: 11px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100vw;
+    position:fixed;
+    background-color: inherit;
+}
+
+.login{
+    padding: 13px;
+    padding-right: 15px;
+    flex-shrink: 0;
+}
+.login input{
+    text-align: center;
+    padding: 7px;
+    margin-left: 5px;
+    width: 100px;
+    border: 0;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+    box-shadow: 5px 7px 10px rgba(214, 212, 212, 0.87);
+}
+.login input:focus {
+    outline: none;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 0px;
+}
+.login input::placeholder{
+    color: #ccc;
+}
+.login button{
+    cursor:pointer;
+    border: 0;
+    font-size: 30px;
+    background-color: inherit;
+}
+
+.login button:hover{
+    color: gray;
+}
+
+.main{
+    padding: 130px 10px 10px 10px;
+    display: none;
+    grid-template-columns: auto minmax(400px,600px) ;
+    margin: auto;
+    max-width: 1000px;
+    min-width: 600px;
+    gap: 20px;
+    justify-self:center;
+
+}
+.main div{
+    border-radius: 10px;
+    background-color: bisque;
+    height: 150px;
+}
+.main input{
+    background-color: #dfdfdf96;
+    width:120px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    justify-self: center;
+}
+.main input:focus{
+    background-color: #ffffffad;
+    outline: none;
+}
+.main button{
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    border:1px;
+}
+.main button:hover{
+    background-color: #ffffff;
+}
+.balance{
+    display: flex;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 50px;
+}
+.balance p{
+    display: flex;
+    flex-direction: column;
+}
+
+.movements{
+    display:flex;
+    flex-direction: column;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    overflow:scroll;
+}
+.movements p3{
+    border-radius: 20px;
+    text-align: center;
+    height: 15px;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 0px 10px 4px 10px;
+    width: 60px;
+
+}
+.newmov{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.newmov p4{
+    padding-top: 4px;
+}
+.newmov p5{
+    font-size: 11px;
+    padding-left: 10px;
+}
+.newmov p6{
+    margin-bottom: 7px;
+}
+#transfer{
+    background-image: linear-gradient(to bottom right,rgb(0, 204, 255),rgba(204, 0, 255, 0.555));
+    height: 130px;
+}
+#request{
+    background-image: linear-gradient(to bottom right, rgb(83, 245, 83),rgb(0, 148, 0));
+    height: 130px;
+}
+#close{
+    background-image: linear-gradient(to bottom right, rgb(241, 29, 29),rgb(145, 6, 6));
+    height: 130px;
+}
+#transfer,#close{
+    display: grid;
+
+    grid-template-rows: 50px 40px auto;
+    padding: 10px;
+    gap: 4px;
+}
+#request{
+    display: grid;
+
+    grid-template-rows: 50px 40px;
+    padding: 10px;
+    gap: 4px;
+
+}
+#transfer p,#close p {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#request p{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#transfer p1,#request p1,#close p1{
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>easyBank</title>
+        <link rel="shortcut icon" type="image/png" href="./plugs/easyBANK-logos_white_top.png">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <span  style="padding: 22px 0px 0px 15px;">Log in to get started</span>
+            <img style="height: 60px;" src="./plugs/easyBANK-logos_black.png">
+            <section class="login">
+                <input class ="user" placeholder="user">
+                <input class="pin" type="password" maxlength="4" placeholder="PIN">
+                <button class="ub">&rarr;</button>
+            </section>
+        </header>
+        <div class="main">
+            <span class="balance"><p><p1>Balance</p1><p3>as of</p3></p><p2></p2></span>
+            <div id="transfer"><p>transfer money</p><input id="tu"><input id="ta" type="number"><button id="tb">&rarr;</button><p1>user</p1><p1>amount</p1></div>
+            <div id="request"><p>request money</p><input id="ra" type="number"><button id="rb">&rarr;</button><p1>amount</p1></div>
+            <div id="close"><p>close account</p><input id="cu"><input id="cp" type="password"><button>&rarr;</button><p1 id="cb">user</p1><p1>pin</p1></div>
+            <span class="movements">
+            </span>
+        </div>
+        <h>loading....</h>
+    <script src="./script.js"></script>   
+    </body>
+</html>
