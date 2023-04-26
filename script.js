@@ -1,4 +1,6 @@
 'use strict';
+const loginText = document.querySelector('.loginText');
+const login = document.querySelector('.login');
 const user = document.querySelector('.user');
 const pin = document.querySelector('.pin');
 const userB = document.querySelector('.ub');
@@ -52,6 +54,8 @@ function logout() {
 userB.addEventListener('click', function(){
     if(user.value === 'heal' && Number(pin.value) == 3333){
         document.querySelector('.main').style.display = 'grid';
+        login.style.display = 'none';
+        loginText.textContent = `Welcome, ${user.value}`;
         logout();
 
     }

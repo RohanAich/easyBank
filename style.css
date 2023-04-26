@@ -5,6 +5,9 @@
     margin: 0%;
 
 }
+.hidden{
+    display: none;
+}
 body{
     background-color:#f8f7f7;
     height: 100vh;
@@ -24,6 +27,7 @@ header{
     width: 100vw;
     position:fixed;
     background-color: inherit;
+    
 }
 
 .login{
@@ -59,7 +63,9 @@ header{
 .login button:hover{
     color: gray;
 }
-
+.logo{
+    margin:auto;
+}
 .main{
     padding: 130px 10px 10px 10px;
     display: none;
@@ -99,10 +105,13 @@ header{
 }
 .balance{
     display: flex;
+    background-color: white;
     justify-content: space-between;
     grid-column-start: 1;
     grid-column-end: 3;
+    border-radius: 10px;
     height: 50px;
+    padding: 10px;
 }
 .balance p{
     display: flex;
@@ -119,6 +128,7 @@ header{
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     padding: 5px;
+    height: 480;
     overflow:scroll;
 }
 .movements p3{
@@ -160,7 +170,6 @@ header{
 }
 #transfer,#close{
     display: grid;
-
     grid-template-rows: 50px 40px auto;
     padding: 10px;
     gap: 4px;
@@ -174,13 +183,16 @@ header{
 
 }
 #transfer p,#close p {
+    color: white;
     grid-column-start: 1;
     grid-column-end: 4;
 }
 #request p{
+    color:white;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 #transfer p1,#request p1,#close p1{
     text-align: center;
+    color:white
 }
