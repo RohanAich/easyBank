@@ -43,6 +43,8 @@ function logout() {
     if(cd ===0){
         clearInterval(alpha)
         document.querySelector('.main').style.display = 'none';
+        login.style.display = 'flex';
+        loginText.textContent = `Log in to get started`;
     }
     cd --;},1000);
     return alpha

@@ -70,6 +70,7 @@ header{
     padding: 130px 10px 10px 10px;
     display: none;
     grid-template-columns: auto minmax(400px,600px) ;
+    grid-template-rows: 70px 150px 150px 150px;
     margin: auto;
     max-width: 1000px;
     min-width: 600px;
