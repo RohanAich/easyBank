@@ -50,7 +50,7 @@ function logout() {
 
 ///////
 userB.addEventListener('click', function(){
-    if(user.value === 'heal' && Number(pin.value) == 3333 || 1){
+    if(user.value === 'heal' && Number(pin.value) == 3333){
         document.querySelector('.main').style.display = 'grid';
         logout();
 
